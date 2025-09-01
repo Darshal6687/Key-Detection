@@ -92,6 +92,6 @@ if uploaded_file is not None:
     st.subheader(f"🎯 Keys detected: {len(final_boxes)}")
 
     for i, (box, score) in enumerate(zip(final_boxes, final_scores)):
-        st.write(f"Key {i+1}: Confidence = {score:.2f}")
+        st.write(f"Key {i+1}: Accuracy = {score:.2%}")
 
 
