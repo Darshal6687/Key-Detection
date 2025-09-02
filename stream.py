@@ -74,7 +74,7 @@ uploaded_file = st.file_uploader("Upload an image", type=["jpg", "jpeg", "png"])
 if uploaded_file is not None:
     # Open uploaded image
     image = Image.open(uploaded_file).convert("RGB")
-    st.image(image, caption="Uploaded Image", width="stretch")
+    st.image(image, caption="Uploaded Image", use_container_width=True)
 
     # Preprocess and inference
     input_data, orig_img = preprocess_image(image)
