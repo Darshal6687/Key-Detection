@@ -1,0 +1,90 @@
+{
+  "id": 176,
+  "result": [
+    {
+      "original_width": 1920,
+      "original_height": 2560,
+      "image_rotation": 0,
+      "value": {
+        "x": 33.07291666666667,
+        "y": 29.257812500000004,
+        "width": 32.65625,
+        "height": 16.25,
+        "rotation": 0,
+        "rectanglelabels": [
+          "key"
+        ]
+      },
+      "id": "4xY1RSJjkt",
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "origin": "prediction",
+      "score": 0.8652554750442505
+    },
+    {
+      "original_width": 1920,
+      "original_height": 2560,
+      "image_rotation": 0,
+      "value": {
+        "x": 31.8407960199005,
+        "y": 46.26865671641791,
+        "width": 28.109452736318403,
+        "height": 16.791044776119406,
+        "rotation": 0,
+        "rectanglelabels": [
+          "key"
+        ]
+      },
+      "id": "O8akUO6YVi",
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "origin": "manual"
+    }
+  ],
+  "created_username": "D Patel darsm467@gmail.com, 1",
+  "created_ago": "0\u00a0minutes",
+  "completed_by": {
+    "id": 1,
+    "first_name": "D",
+    "last_name": "Patel",
+    "email": "darsm467@gmail.com"
+  },
+  "task": {
+    "id": 84,
+    "data": {
+      "image": "/data/upload/1/97725b72-Key_41_2.jpg"
+    },
+    "meta": {},
+    "created_at": "2025-09-12T09:30:56.604991Z",
+    "updated_at": "2025-09-12T09:31:02.979632Z",
+    "is_labeled": true,
+    "overlap": 1,
+    "inner_id": 19,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 1,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 1,
+    "updated_by": 1,
+    "file_upload": 197,
+    "comment_authors": []
+  },
+  "was_cancelled": false,
+  "ground_truth": false,
+  "created_at": "2025-09-15T05:05:22.869115Z",
+  "updated_at": "2025-09-15T05:05:22.869115Z",
+  "draft_created_at": "2025-09-15T05:05:13.074387Z",
+  "lead_time": 21.781,
+  "import_id": null,
+  "last_action": null,
+  "bulk_created": false,
+  "project": 1,
+  "updated_by": 1,
+  "parent_prediction": 28,
+  "parent_annotation": null,
+  "last_created_by": null
+}

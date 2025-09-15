@@ -1,0 +1,91 @@
+{
+  "id": 32,
+  "result": [
+    {
+      "original_width": 1848,
+      "original_height": 4000,
+      "image_rotation": 0,
+      "value": {
+        "x": 22.07792207792208,
+        "y": 54.125,
+        "width": 37.33766233766234,
+        "height": 29.725,
+        "rotation": 0,
+        "rectanglelabels": [
+          "key"
+        ]
+      },
+      "id": "CDff-Rn1eW",
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "origin": "prediction",
+      "score": 0.9121881127357483
+    },
+    {
+      "original_width": 1848,
+      "original_height": 4000,
+      "image_rotation": 0,
+      "value": {
+        "x": 35.28138528138528,
+        "y": 23.599999999999998,
+        "width": 32.25108225108225,
+        "height": 23.775,
+        "rotation": 0,
+        "rectanglelabels": [
+          "key"
+        ]
+      },
+      "id": "iRea7HOH-6",
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "origin": "prediction",
+      "score": 0.8719553351402283
+    }
+  ],
+  "created_username": "D Patel darsm467@gmail.com, 1",
+  "created_ago": "0\u00a0minutes",
+  "completed_by": {
+    "id": 1,
+    "first_name": "D",
+    "last_name": "Patel",
+    "email": "darsm467@gmail.com"
+  },
+  "task": {
+    "id": 7,
+    "data": {
+      "image": "/data/upload/1/19ac84f4-Key_26.jpg"
+    },
+    "meta": {},
+    "created_at": "2025-09-10T10:01:46.481609Z",
+    "updated_at": "2025-09-10T10:01:52.829192Z",
+    "is_labeled": true,
+    "overlap": 1,
+    "inner_id": 7,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 1,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 1,
+    "updated_by": 1,
+    "file_upload": 64,
+    "comment_authors": []
+  },
+  "was_cancelled": false,
+  "ground_truth": false,
+  "created_at": "2025-09-10T10:04:36.043754Z",
+  "updated_at": "2025-09-10T10:04:36.043754Z",
+  "draft_created_at": null,
+  "lead_time": 5.445,
+  "import_id": null,
+  "last_action": null,
+  "bulk_created": false,
+  "project": 1,
+  "updated_by": 1,
+  "parent_prediction": 17,
+  "parent_annotation": null,
+  "last_created_by": null
+}

@@ -1,0 +1,13 @@
+.env
+*.env
+.venv
+keydetection
+.vscode
+requirements_keydetection.txt
+requirements_venv.txt
+my_project_env
+PtModel.py
+tfliteModel.py
+train.py
+Models/25_08.pt
+Models/25_08_float32.tflite

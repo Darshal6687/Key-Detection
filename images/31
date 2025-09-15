@@ -1,0 +1,90 @@
+{
+  "id": 31,
+  "result": [
+    {
+      "original_width": 1848,
+      "original_height": 4000,
+      "image_rotation": 0,
+      "value": {
+        "x": 37.71645021645021,
+        "y": 15.9,
+        "width": 34.307359307359306,
+        "height": 32.85,
+        "rotation": 0,
+        "rectanglelabels": [
+          "key"
+        ]
+      },
+      "id": "SD-RG0CJHD",
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "origin": "prediction",
+      "score": 0.5469448566436768
+    },
+    {
+      "original_width": 1848,
+      "original_height": 4000,
+      "image_rotation": 0,
+      "value": {
+        "x": 33.51747754732829,
+        "y": 53.73134328358204,
+        "width": 36.748077792853906,
+        "height": 35.07462686567165,
+        "rotation": 0,
+        "rectanglelabels": [
+          "key"
+        ]
+      },
+      "id": "CgPsK774gJ",
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "origin": "manual"
+    }
+  ],
+  "created_username": "D Patel darsm467@gmail.com, 1",
+  "created_ago": "0\u00a0minutes",
+  "completed_by": {
+    "id": 1,
+    "first_name": "D",
+    "last_name": "Patel",
+    "email": "darsm467@gmail.com"
+  },
+  "task": {
+    "id": 4,
+    "data": {
+      "image": "/data/upload/1/a1674780-Key_60.jpg"
+    },
+    "meta": {},
+    "created_at": "2025-09-10T09:31:46.014604Z",
+    "updated_at": "2025-09-10T09:31:52.379321Z",
+    "is_labeled": true,
+    "overlap": 1,
+    "inner_id": 4,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 1,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 1,
+    "updated_by": 1,
+    "file_upload": 61,
+    "comment_authors": []
+  },
+  "was_cancelled": false,
+  "ground_truth": false,
+  "created_at": "2025-09-10T09:51:03.811252Z",
+  "updated_at": "2025-09-10T09:51:03.811252Z",
+  "draft_created_at": "2025-09-10T09:50:32.949894Z",
+  "lead_time": 1135.132,
+  "import_id": null,
+  "last_action": null,
+  "bulk_created": false,
+  "project": 1,
+  "updated_by": 1,
+  "parent_prediction": 15,
+  "parent_annotation": null,
+  "last_created_by": null
+}

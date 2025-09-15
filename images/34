@@ -1,0 +1,89 @@
+{
+  "id": 34,
+  "result": [
+    {
+      "original_width": 640,
+      "original_height": 640,
+      "image_rotation": 0,
+      "value": {
+        "x": 17.4609375,
+        "y": 37.734375,
+        "width": 25.859375,
+        "height": 18.125,
+        "rotation": 0,
+        "rectanglelabels": [
+          "key"
+        ]
+      },
+      "id": "oWMDxdOndW",
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "origin": "manual"
+    },
+    {
+      "original_width": 640,
+      "original_height": 640,
+      "image_rotation": 0,
+      "value": {
+        "x": 43.47656250000001,
+        "y": 38.7109375,
+        "width": 28.984375,
+        "height": 18.671875,
+        "rotation": 0,
+        "rectanglelabels": [
+          "key"
+        ]
+      },
+      "id": "V0ClrrVAjB",
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "origin": "manual"
+    }
+  ],
+  "created_username": "D Patel darsm467@gmail.com, 1",
+  "created_ago": "1\u00a0minute",
+  "completed_by": {
+    "id": 1,
+    "first_name": "D",
+    "last_name": "Patel",
+    "email": "darsm467@gmail.com"
+  },
+  "task": {
+    "id": 10,
+    "data": {
+      "image": "/data/upload/1/c16df505-Key_9_jpg.rf.98214f422cad1c47d770aff504da2f57.jpg"
+    },
+    "meta": {},
+    "created_at": "2025-09-10T12:23:18.872032Z",
+    "updated_at": "2025-09-10T12:24:46.732878Z",
+    "is_labeled": true,
+    "overlap": 1,
+    "inner_id": 10,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 1,
+    "updated_by": null,
+    "file_upload": 86,
+    "comment_authors": []
+  },
+  "was_cancelled": false,
+  "ground_truth": true,
+  "created_at": "2025-09-10T12:23:18.889383Z",
+  "updated_at": "2025-09-10T12:24:46.782319Z",
+  "draft_created_at": null,
+  "lead_time": 49.589,
+  "import_id": null,
+  "last_action": null,
+  "bulk_created": false,
+  "project": 1,
+  "updated_by": 1,
+  "parent_prediction": null,
+  "parent_annotation": null,
+  "last_created_by": null
+}
