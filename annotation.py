@@ -17,18 +17,18 @@ load_dotenv()
 # ===== CONFIG =====
 TFLITE_MODEL_PATH = "Models/25_08_float16.tflite"
 PROJECT_NAME = "Key Detection Project"         
-STORAGE_ID = 7 
-LOCAL_PATH = r"C:\Key Detection Model\images"
 IMAGE_DIR = os.path.join(os.getcwd(), "images")
 # LABEL_STUDIO_URL = os.getenv("LABEL_STUDIO_URL", "http://localhost:8080")
 LABEL_STUDIO_URL = os.environ.get("LABEL_STUDIO_URL", "http://localhost:8080")
 API_KEY = os.getenv("API_KEY", "")
 PROJECT_ID = int(os.getenv("PROJECT_ID", "1"))
+
 # ===== Load TFLite model =====
 interpreter = tf.lite.Interpreter(model_path=TFLITE_MODEL_PATH)
 interpreter.allocate_tensors()
 input_details = interpreter.get_input_details()
 output_details = interpreter.get_output_details()
+
 
 # -------------------------------
 # Environment Checks
@@ -132,25 +132,25 @@ def draw_boxes(image_pil, boxes, scores):
     return image_pil
 
 
-def get_access_token():
-    """Exchange refresh token for short-lived access token."""
-    resp = requests.post(
-        f"{LABEL_STUDIO_URL}/api/token/refresh",
-        headers={"Content-Type": "application/json"},
-        json={"refresh": API_KEY}
-    )
-    if resp.ok:
-        resp.json().get("access")
-        return resp.json().get("access")
-    else:
-        raise RuntimeError(f"❌ Failed to refresh token: {resp.status_code} {resp.text}")
+# def get_access_token():
+#     """Exchange refresh token for short-lived access token."""
+#     resp = requests.post(
+#         f"{LABEL_STUDIO_URL}/api/token/refresh",
+#         headers={"Content-Type": "application/json"},
+#         json={"refresh": API_KEY}
+#     )
+#     if resp.ok:
+#         resp.json().get("access")
+#         return resp.json().get("access")
+#     else:
+#         raise RuntimeError(f"❌ Failed to refresh token: {resp.status_code} {resp.text}")
 
 
 def upload_image_to_ls(file_path):
-    access_token = get_access_token()
-    headers = {"Authorization": f"Bearer {access_token}"}
+    # access_token = get_access_token()
+    # headers = {"Authorization": f"Bearer {access_token}"}
     
-    # headers = {"Authorization": f"Token {API_KEY}"}
+    headers = {"Authorization": f"Token {API_KEY}"}
     
     with open(file_path, "rb") as f:
         response = requests.post(
@@ -182,9 +182,9 @@ def upload_image_to_ls(file_path):
 
 def send_predictions_to_ls(task_id, final_boxes, final_scores, orig_size):
     url = f"{LABEL_STUDIO_URL}/api/predictions/"
-    access_token = get_access_token()
-    headers = {"Authorization": f"Bearer {access_token}"}
-
+    # access_token = get_access_token()
+    # headers = {"Authorization": f"Bearer {access_token}"}
+    headers = {"Authorization": f"Token {API_KEY}"}
     orig_w, orig_h = orig_size
     results = []
 
@@ -216,7 +216,6 @@ def send_predictions_to_ls(task_id, final_boxes, final_scores, orig_size):
     }
 
     resp = requests.post(url, headers=headers, json=payload)
-    # print("🔎 Prediction upload response:", resp.status_code, resp.text)
 
 # -------------------------------
 # Streamlit UI
@@ -305,7 +304,4 @@ if st.button("Annotate in Label Studio"):
         else:
             st.error("❌ Failed to upload the image to Label Studio. Please check your connection or API key.")
             
-# -------------------------------
-# Embed Label Studio UI
-# -------------------------------
 
