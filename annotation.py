@@ -16,13 +16,14 @@ load_dotenv()
 
 # ===== CONFIG =====
 TFLITE_MODEL_PATH = "Models/25_08_float16.tflite"
-LABEL_STUDIO_URL = "http://localhost:8080"
-PROJECT_NAME = "Key Detection Project"
-PROJECT_ID = 1          
+PROJECT_NAME = "Key Detection Project"         
 STORAGE_ID = 7 
 LOCAL_PATH = r"C:\Key Detection Model\images"
 IMAGE_DIR = os.path.join(os.getcwd(), "images")
-API_KEY = os.getenv("API_KEY")
+# LABEL_STUDIO_URL = os.getenv("LABEL_STUDIO_URL", "http://localhost:8080")
+LABEL_STUDIO_URL = os.environ.get("LABEL_STUDIO_URL", "http://localhost:8080")
+API_KEY = os.getenv("API_KEY", "")
+PROJECT_ID = int(os.getenv("PROJECT_ID", "1"))
 # ===== Load TFLite model =====
 interpreter = tf.lite.Interpreter(model_path=TFLITE_MODEL_PATH)
 interpreter.allocate_tensors()
