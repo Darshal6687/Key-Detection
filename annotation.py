@@ -296,7 +296,7 @@ if st.button("Annotate in Label Studio"):
                     "⚠️ Model did not detect any keys in this image. You can manually annotate in Label Studio."
                 )
             st.markdown("---")
-            st.subheader("📑 Label Studio Interface (Embedded)")
+            #st.subheader("📑 Label Studio Interface (Embedded)")
 
             # Embed LS into the Streamlit app
             # LABEL_STUDIO_URL_Custom = "https://key-counter.onrender.com/projects/1/data"
