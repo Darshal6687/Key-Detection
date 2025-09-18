@@ -273,22 +273,14 @@ if st.button("Annotate in Label Studio"):
         # Upload directly to Label Studio
         task_id = upload_image_to_ls(file_path)
         if task_id:
-            st.success("✅ Uploaded into Label Studio")
-            st.markdown(f"[🔗 Open in Label Studio]({LABEL_STUDIO_URL}/projects/{PROJECT_ID}/data)")
-            
-            
-            # # 👉 Now send bounding boxes as predictions
-            # if final_boxes:
-            #     send_predictions_to_ls(task_id, final_boxes, final_scores, orig_size)
-            #     st.info("📤 Sent model predictions (bounding boxes) to Label Studio!")
-            # 👉 If model detected any keys, send predictions to LS
-            
-            
+
             if final_boxes:
                 send_predictions_to_ls(task_id, final_boxes, final_scores, orig_size)
-                st.info(
-                    f"📤 Sent {len(final_boxes)} model predictions (bounding boxes) to Label Studio!"
-                )
+                st.success("✅ Uploaded into Label Studio")
+                st.markdown(f"[🔗 Open in Label Studio]({LABEL_STUDIO_URL}/projects/{PROJECT_ID}/data)")
+                # st.info(
+                #     f"📤 Sent {len(final_boxes)} model predictions (bounding boxes) to Label Studio!"
+                # )
             else:
                 # Send an empty prediction to indicate model ran but found nothing
                 send_predictions_to_ls(task_id, [], [], orig_size)
