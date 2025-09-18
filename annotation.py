@@ -114,7 +114,7 @@ def draw_boxes(image_pil, boxes, scores):
 
     try:
         # Use a common font, fallback if not found
-        font = ImageFont.truetype("arial.ttf", 80)  # 24px font size
+        font = ImageFont.truetype("arial.ttf", 80)  # font size
     except:
         font = ImageFont.load_default()
 
@@ -287,6 +287,8 @@ if st.button("Annotate in Label Studio"):
                 st.warning(
                     "⚠️ Model did not detect any keys in this image. You can manually annotate in Label Studio."
                 )
+                st.markdown(f"[🔗 Open in Label Studio]({LABEL_STUDIO_URL}/projects/{PROJECT_ID}/data)")
+
             st.markdown("---")
             #st.subheader("📑 Label Studio Interface (Embedded)")
 
