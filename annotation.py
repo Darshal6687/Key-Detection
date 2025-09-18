@@ -222,7 +222,7 @@ def send_predictions_to_ls(task_id, final_boxes, final_scores, orig_size):
 # -------------------------------
 
 st.title("🔑 Key Detection with HINL")
-st.set_page_config(page_title="Key Counter App", layout="wide")
+# st.set_page_config(page_title="Key Counter App", layout="wide")
 uploaded_file = st.file_uploader("Upload an image", type=["jpg","jpeg","png"])
 
 if uploaded_file:
