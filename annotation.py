@@ -299,7 +299,7 @@ if st.button("Annotate in Label Studio"):
             st.subheader("📑 Label Studio Interface (Embedded)")
 
             # Embed LS into the Streamlit app
-            LABEL_STUDIO_URL_Custom = "http://localhost:8080/projects/1/data"
+            LABEL_STUDIO_URL_Custom = "https://key-counter.onrender.com/projects/1/data"
             st.components.v1.iframe(f"{LABEL_STUDIO_URL_Custom}", height=1200, scrolling=True)
         else:
             st.error("❌ Failed to upload the image to Label Studio. Please check your connection or API key.")
